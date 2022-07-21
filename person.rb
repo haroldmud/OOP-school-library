@@ -8,26 +8,19 @@ class Person
     attr_reader :id
     attr_writer :name, :age, :parent_permission
 
-    def state (name: 'Unknown', age, parent_permission: true )
+    def initializing (age, name: 'Unknown', parent_permission: true)
         @id = Random.rand(1..1000)
         @name = name
         @age = age
         @parent_permission = parent_permission
     end
-
-    def self.inherited(subclass)
-        subclass.define_method :override do
-          parent_permission = true
-          super
-        end
-    end
    
-    def set(name, age)
+    def setter(name, age)
         @name = name
         @age = age
     end
 
-    def get
+    def getter
         {
           'id' => @id,
           'name' => @name,

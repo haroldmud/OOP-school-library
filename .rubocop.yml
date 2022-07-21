@@ -50,7 +50,23 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
+Layout/EmptyLineBetweenDefs:
+  Enabled: false
+Layout/TrailingWhitespace:
+  Enabled: false  
+Layout/TrailingWhitespace:
+  Enabled: false  
+Layout/Tab:
+  Enabled: false
+Layout/IndentationConsistency:
+  Enabled: false
+Layout/Tab:
+  Enabled: false
+Layout/IndentationWidth:
+  Enabled: false
+Layout/TrailingBlankLines:
+  Enabled: false
+Layout/SpaceAfterMethodName:
+  Enabled: false
+Lint/DefEndAlignment:
+  Enabled: false

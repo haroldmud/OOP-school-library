@@ -1,56 +1,30 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
-# Project Name
-
-> Description the project.
-
-
-## Built With
-
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
-
+# School-Library
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
+- copy this link `https://github.com/camilevahviraki/School-Library`.
+- get the directory that you want to clone the repository.
+- open the command prompt in this directory.
+- write `https://github.com/camilevahviraki/School-Library`.
+- go to the repository folder in your command prompt `School-Library`.
+- Open terminal in that folder run `bundle install`.
+- run `ruby person.rb`
 
 
+## Author
 
-## Authors
+👤 **Harold**
 
-👤 **Author1**
+- GitHub: [@haroldmudosa](https://github.com/haroldmud)
+- Twitter: [@haroldmudosa](https://twitter.com/mudosaarnold)
+- LinkedIn: [@haroldmudosa](https://www.linkedin.com/in/haroldmud)
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+## Contributing
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
+Bug reports and pull requests are welcome on GitHub at https://github.com/camilevahviraki/School-Library. This project is intended to be a safe, welcoming space for collaboration, and contributors are welcome.
+Fill free to reach us or contact in the issue page.
 
 ## Show your support
 
@@ -61,7 +35,3 @@ Give a ⭐️ if you like this project!
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
