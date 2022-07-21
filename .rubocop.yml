@@ -64,8 +64,8 @@ Lint/DefEndAlignment:
   Enabled: false
 Layout/IndentationWidth:
   Enabled: false
-Layout/TrailingBlankLines:
-  Enabled: false
+# Layout/TrailingBlankLines:
+#   Enabled: false
 Layout/SpaceAfterMethodName:
   Enabled: false
 Lint/DefEndAlignment:

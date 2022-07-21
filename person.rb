@@ -37,4 +37,4 @@ class Person
     end
 
     private :isof_age?
-end    
+end
