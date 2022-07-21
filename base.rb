@@ -1,4 +1,4 @@
-require_relative './nemable'
+require_relative './nameable'
 
 class Base < Nameable
   def initialize(nameable)
