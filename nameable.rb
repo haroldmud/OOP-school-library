@@ -1,7 +1,7 @@
-module Nameable
+class Nameable
     attr_accessor :Nameable
 
-    def initializing (nameable)
+    def initialize(nameable)
         @nameable = nameable
     end
 
