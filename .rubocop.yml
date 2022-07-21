@@ -70,3 +70,5 @@ Layout/SpaceAfterMethodName:
   Enabled: false
 Lint/DefEndAlignment:
   Enabled: false
+Naming/VariableName:
+  Enabled: false
