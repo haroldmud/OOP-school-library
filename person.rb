@@ -1,14 +1,16 @@
 require_relative './student'
 require_relative './teacher'
+require_relative './nameable'
 
-class Person
+class Person < Nameable 
     extend Student
     extend Teacher
 
     attr_reader :id
     attr_writer :name, :age, :parent_permission
 
-    def initializing (age, name: 'Unknown', parent_permission: true)
+    def initialize(age, name, parent_permission: true)
+        super(self)
         @id = Random.rand(1..1000)
         @name = name
         @age = age
@@ -36,5 +38,16 @@ class Person
           @parent_permission == true || isof_age?  
     end
 
+    def correct_name
+      @name
+    end
+
     private :isof_age?
 end
+
+person = Person.new(22, 'maximilianus')
+  person.correct_name
+  capitalizedPerson = CapitalizeDecorator.new(person)
+  capitalizedPerson.correct_name
+  capitalizedTrimmedPerson = TrimmerDecorator.new(capitalizedPerson)
+  capitalizedTrimmedPerson.correct_name
