@@ -72,3 +72,5 @@ Lint/DefEndAlignment:
   Enabled: false
 Naming/VariableName:
   Enabled: false
+Naming/MethodName:
+  Enabled: false
