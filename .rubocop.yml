@@ -56,7 +56,7 @@ Layout/TrailingWhitespace:
   Enabled: false  
 Layout/TrailingWhitespace:
   Enabled: false  
-Layout/Tab:
+Layout/IndentationStyle:
   Enabled: false
 Layout/IndentationConsistency:
   Enabled: false
