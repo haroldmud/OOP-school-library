@@ -60,7 +60,7 @@ Layout/Tab:
   Enabled: false
 Layout/IndentationConsistency:
   Enabled: false
-Layout/Tab:
+Lint/DefEndAlignment:
   Enabled: false
 Layout/IndentationWidth:
   Enabled: false
