@@ -7,4 +7,8 @@ module Student
     def play_hooky
       "¯\(ツ)/¯"
     end
+
+    def add_to_classroom
+      new.Classroom(@classroom)
+    end
 end
