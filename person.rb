@@ -1,20 +1,21 @@
-require_relative './student'
-require_relative './teacher'
 require_relative './nameable'
+require_relative './base'
 
 class Person < Nameable 
-    extend Student
-    extend Teacher
+    @person = []
+    @id = 0
 
     attr_reader :id
     attr_writer :name, :age, :parent_permission
 
-    def initialize(age, name, parent_permission: true)
+     def initialize(age, name, profession, parent_permission: true)
         super(self)
+        @id += 1
         @id = Random.rand(1..1000)
         @name = name
         @age = age
         @parent_permission = parent_permission
+        @@person.push('id' => @@id.to_s, 'name' => @name, 'age' => @age, 'parent_permission' => @parent_permission, 'profession' => profession)
     end
    
     def setter(name, age)
@@ -51,6 +52,16 @@ class Person < Nameable
       @rental_date << rental_date
       rental_date.person << self
       new.Rental(rental_date, person_data, book_data)
+    end
+
+    def person_list
+      @@person.each_with_index do |perso, key|
+        puts "#{key}) [#{perso['profession']}] Name: #{perso['name']} ID: #{perso['id']} Age: #{perso['age']}"
+      end
+    end
+  
+    def all_persons_storage
+      @@person
     end
 
     private :isof_age?

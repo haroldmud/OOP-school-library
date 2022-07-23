@@ -22,24 +22,31 @@ class Classroom
 end
     
 class Book
+    
     def initialize(title, author)
       @title = title
       @author = author
+      @@books.push('title' => @title, 'author' => @author)
     end
     attr_accessor :title, :author
     
     def add_rental(date)
       new.Rental(date)
     end
+
+    def list_of_books
+      @@books.each_with_index do |book, index|
+        puts "#{index}) Title: #{book['title']}, Author: #{book['author']}"
+      end   
+    end
 end
     
 class Rental
-    def initialize(date, person_obj, book_obj)
+    def initialize(date, person, book)
      @date = date
-     @person_data << person_obj
-     @book_data << book_obj
-     person_obj.person << self
-     book_obj.book << self
+     @person_data = person
+     @book_data = book
+     @@rentals.push('date' => date, 'person_name' => person, 'book' => book)
     end
     
     attr_accessor :date, :person_data, :book_data
