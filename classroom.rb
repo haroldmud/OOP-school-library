@@ -46,7 +46,7 @@ class Rental
      @date = date
      @person_data = person
      @book_data = book
-     @@rentals.push({ 'date' => date, 'person_name' => person, 'book' => book })
+     @@rentals.push('date' => date, 'person_name' => person, 'book' => book)
     end
     
     attr_accessor :date, :person_data, :book_data

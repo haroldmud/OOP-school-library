@@ -52,8 +52,8 @@ Style/HashTransformKeys:
   Enabled: false
 Style/HashTransformValues:
   Enabled: false
-Style/BracesAroundHashParameters:
-  Enabled: false
+# Style/BracesAroundHashParameters:
+#   Enabled: false
 Layout/EmptyLineBetweenDefs:
   Enabled: false
 Layout/TrailingWhitespace:

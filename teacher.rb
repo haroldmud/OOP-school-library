@@ -6,13 +6,9 @@ class Teacher < Person
   def initialize(specialization, age, name, profession)
     super(age, name, profession)
         @specialization = specialization
-        @@teachers.push(
-          {
-            'name' => name,
-            'specialization' => specialization,
-            'age' => age
-          }
-        )
+        @@teachers.push('name' => name,
+                        'specialization' => specialization,
+                        'age' => age)
   end
 
   def can_use_services? 

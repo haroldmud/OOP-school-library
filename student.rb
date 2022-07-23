@@ -5,7 +5,7 @@ class Student < Person
   def initialize(classroom, age, name, profession, parent_permission)
     super(age, name, profession)
       @classroom = classroom
-      @@students.push({ 'id' => @@id, 'name' => name, 'age' => age, 'parent_permission' => parent_permission, 'classroom' => @classroom })
+      @@students.push('id' => @@id, 'name' => name, 'age' => age, 'parent_permission' => parent_permission, 'classroom' => @classroom)
     end
 
     attr_accessor :classroom

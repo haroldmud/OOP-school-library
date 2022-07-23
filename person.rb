@@ -15,7 +15,7 @@ class Person < Nameable
         @name = name
         @age = age
         @parent_permission = parent_permission
-        @@person.push({ 'id' => @@id.to_s, 'name' => @name, 'age' => @age, 'parent_permission' => @parent_permission, 'profession' => profession })
+        @@person.push('id' => @@id.to_s, 'name' => @name, 'age' => @age, 'parent_permission' => @parent_permission, 'profession' => profession)
     end
    
     def setter(name, age)
